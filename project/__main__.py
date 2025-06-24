@@ -30,7 +30,7 @@ def send_msg(msg = "", level = "Error"):
 
 def main():
     try:
-        global environment, logger
+        global environment
         machine_name = socket.gethostname()
         environment = MachinePath.machine_path.get(machine_name)
         if not environment: environment = "Local"
